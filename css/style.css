@@ -7,7 +7,7 @@
 :root{
     scroll-behavior: smooth;
 }
-
+/*-----------     Main Contenedor     -----------*/
 .contenedor{
     width: 90%;
     max-width: 1200px;
@@ -15,6 +15,8 @@
     margin: auto;
     padding: 60px 0;
 }
+
+/*-----------      Main Header     -------------*/
 
 header{
     height: 100vh;
@@ -26,6 +28,7 @@ header{
 }
 
 .head{
+    text-align: center;
     padding: 0;
     height: 100%;
     display: flex;
@@ -34,6 +37,8 @@ header{
     flex-direction: column;
     color: #fff;
 }
+
+/*----------     Menu Settings      -----------*/
 
 .menu{
     position: fixed;
@@ -53,7 +58,7 @@ header{
     right: 0;
     width: 25vw;
     height: 100%;
-    background-image: linear-gradient(120deg, rgba(161, 196, 253, 0.4) 0%, rgba(194, 233, 251, 0.4) 100%);
+    background-image: linear-gradient(to right, rgb(106, 17, 203) 0%, rgb(37, 117, 252) 100%);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -72,16 +77,19 @@ header{
     text-decoration: none;
 }
 
+/*---   Title Settings   ---*/
 .titulo{
     font-size: 60px;
     margin-bottom: 15px;
 }
 
+/*---   Header Title   ---*/
 .copy{
     font-weight: 300;
     font-size: 25px;
 }
 
+/*---   Subtitles How: "Servicios", "Expertos en", "Galería"   ---*/
 .subtitulo{
     text-align: center;
     font-weight: 300;
@@ -89,6 +97,8 @@ header{
     margin-bottom: 40px;
     font-size: 40px;
 }
+
+/*----------         Service Settings          ----------*/
 
 .contenedor-servicio{
     display: flex;
@@ -127,6 +137,8 @@ header{
     margin-right: 5px;
 }
 
+/*----------          Gallery Settings          ----------*/
+
 .gallery{
     background: #f2f2f2;
 }
@@ -138,6 +150,7 @@ header{
 }
 
 .img-galeria{
+    object-fit: cover;
     width: 30%;
     display: block;
     margin-bottom: 15px;
@@ -168,6 +181,7 @@ header{
     border-radius: 10px;
     transform: scale(0);
     transition: transform 0.3s 0.2s;
+    object-fit: cover;
 }
 
 .showImage{
@@ -181,6 +195,8 @@ header{
     width: 40px;
     cursor: pointer;
 }
+
+/*----------          Experts Settings          ----------*/
 
 .expert{
     display: flex;
@@ -207,6 +223,8 @@ header{
     width: 100%;
     font-weight: 400;
 }
+
+/*----------          Footer Settings          ----------*/
 
 footer{
     background: #9f8ad0;
@@ -261,6 +279,7 @@ footer{
 .social-media-icon img{
     font-size: 30px;
     line-height: 60px;
+    margin-top: 15px;
 }
 
 .line{
@@ -272,8 +291,10 @@ footer{
     margin-bottom: 60px;
 }
 
+/*-----   Responsive Design Settings   -----*/
+
 @media screen and (max-width: 800px){
-    .menu-navegacion{
+    .navigation-menu{
         width: 50vw;
     }
 
@@ -286,7 +307,7 @@ footer{
         margin-bottom: 40px;
     }
     
-    .checklist-servicio{
+    .cheklist-servicio{
         width: 80%;
     }
 
@@ -298,7 +319,7 @@ footer{
         width: 45%;
     }
     
-    .agregarImagen{
+    .agregar-imagen{
         width: 80%;
     }
 
@@ -330,11 +351,11 @@ footer{
 
 
 @media screen and (max-width: 500px){
-    .menu-navegacion{
+    .navigation-menu{
         width: 65vw;
     }
 
-    .hamburguer{
+    .menu{
         top: 20px;
         right: 20px;
     }
